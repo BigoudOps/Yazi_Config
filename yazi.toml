@@ -249,3 +249,13 @@ run  = "mactag"
 [[plugin.prepend_previewers]]
 url = "*.md"
 run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"'
+
+[[plugin.prepend_fetchers]]
+id  = "git"
+url = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id  = "git"
+url = "*/"
+run = "git"
